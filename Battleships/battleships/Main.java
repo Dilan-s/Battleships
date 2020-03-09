@@ -5,7 +5,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Grid grid = makeInitialGrid();
-
+        System.out.println(grid);
+        System.out.println(grid.toPlayerString());
+        String token = input.next();
         // TODO: Question 4.
     }
 
