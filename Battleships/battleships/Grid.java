@@ -20,11 +20,17 @@ public class Grid {
     int x = c.getColumn();
     for (int i = 0; i < size; i++) {
       if (isDown){
+        if (y+i > HEIGHT - 1){
+          return false;
+        }
         if (grid[y+i][x] != Piece.WATER){
           return false;
         }
       }
       if (!isDown){
+        if (x+i > WIDTH - 1){
+          return false;
+        }
         if (grid[y][x+i] != Piece.WATER){
           return false;
         }

@@ -2,8 +2,10 @@ import java.util.Arrays;
 
 public class Util {
 
+  public static final int LETTER_A = 65;
+
   private static int letterToIndex(char letter) {
-    return ((int) letter - 65);
+    return ((int) letter - LETTER_A);
   }
 
   private static int numberToIndex(char number) {
